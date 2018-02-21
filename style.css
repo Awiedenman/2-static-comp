@@ -87,14 +87,14 @@ li{
 
 .titlebar__li-icon1 {
   display: inline-block;
-  background-image: url(images/meteorite.svg);
+  background-image: url('images/meteorite.svg');
   background-repeat: no-repeat;
 /*  padding-left: 28px;
   padding-bottom: 18px;*/
 }
 
 .titlebar__li-icon1:hover {
-  background-image: url(images/meteoriteHover.svg);
+  background-image: url('images/meteoriteHover.svg');
   color: #FFFFFF;
 }
 
@@ -104,13 +104,13 @@ li{
 
 .titlebar__li-icon2 {
   display: inline-block;
-  background-image: url(images/landslide.svg);
+  background-image: url('images/landslide.svg');
   background-repeat: no-repeat;
   background-size: 25px;
 }
 
 .titlebar__li-icon2:hover {
-  background-image: url(images/landslideHover.svg);
+  background-image: url('images/landslideHover.svg');
   color: #FFFFFF;
 }
 
@@ -120,19 +120,19 @@ li{
 
 .titlebar__li-icon3 {
   display: inline-block;
-  background-image: url(images/gems.svg);
+  background-image: url('images/gems.svg');
   background-repeat: no-repeat;
   /*padding-left: 28px;
   padding-bottom: 18px;*/
 }
 
 .titlebar__li-icon3:hover {
-  background-image: url(images/gemsHover.svg);
+  background-image: url('images/gemsHover.svg');
   color: #FFFFFF;
 }
 
 .titlebar__li-icon3:after {
-  background-image: url(images/gemsClicked.svg);
+  background-image: url('images/gemsClicked.svg');
   opacity: 1;
 }
 
@@ -159,7 +159,7 @@ li{
 
 .titlebar__logo {
   display: inline-block;
-  background-image: url(images/titleRock.svg);
+  background-image: url('images/titleRock.svg');
   background-repeat: no-repeat;
   vertical-align: middle;
   height: 40px;
@@ -262,7 +262,7 @@ h2 {
 }
 
 .card__header8 {
-  background-image: url('images/amber.JPG');
+  background-image: url('images/amber.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
