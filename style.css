@@ -1,0 +1,668 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+body{
+  min-width: 225px;
+}
+
+.titlebar {
+  width: 100%;
+  height: 180px;
+  border: 1px #303C3B solid;
+  position: relative;
+  background-color: #303C3B;
+  color: #FFFFFF;
+}
+ul {
+  display: inline-block;
+  margin: 40px 0 0 10px;
+  padding: 0;
+}
+
+li{
+  display: inline-block;
+}
+
+.admin-text {
+  display: inline-block;
+}
+
+.user-icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px; 
+  vertical-align: middle;
+  border: black 1px solid;
+  border-radius: 50px;
+}
+
+.admin .fa-user-secret {
+  font-size: 25px;
+  vertical-align: middle;
+  padding: 3px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  color: #FFFFFF;
+}
+
+.fa-caret-down {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.admin {
+  text-align: right;
+  margin: 18px 30px;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.admin span {
+  color: #21ACC6;
+}
+
+.admin span:hover {
+  color: #FFFFFF;
+
+}
+
+.titlebar__li-icon {
+  height:20px;
+  width: 20px;
+  vertical-align: middle;
+  margin: 0 55px 0 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 4px 63px 25px 33px;
+  color: #92B1B0;
+}
+
+.titlebar__li-icon1 {
+  display: inline-block;
+  background-image: url(images/meteorite.svg);
+  background-repeat: no-repeat;
+/*  padding-left: 28px;
+  padding-bottom: 18px;*/
+}
+
+.titlebar__li-icon1:hover {
+  background-image: url(images/meteoriteHover.svg);
+  color: #FFFFFF;
+}
+
+.titlebar__li-icon1:clicked {
+  opacity: 0.2;
+}
+
+.titlebar__li-icon2 {
+  display: inline-block;
+  background-image: url(images/landslide.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+
+.titlebar__li-icon2:hover {
+  background-image: url(images/landslideHover.svg);
+  color: #FFFFFF;
+}
+
+.titlebar__li-icon2:clicked {
+  opacity: 0.2;
+}
+
+.titlebar__li-icon3 {
+  display: inline-block;
+  background-image: url(images/gems.svg);
+  background-repeat: no-repeat;
+  /*padding-left: 28px;
+  padding-bottom: 18px;*/
+}
+
+.titlebar__li-icon3:hover {
+  background-image: url(images/gemsHover.svg);
+  color: #FFFFFF;
+}
+
+.titlebar__li-icon3:after {
+  background-image: url(images/gemsClicked.svg);
+  opacity: 1;
+}
+
+.titlebar__li-icon-hidden {
+  display: none;
+}
+
+.og__title {
+  display: inline-block;
+  position: absolute;
+  right: 24px;
+  top: 55px;
+  font-size: 50px;
+  font-family: 'Shrikhand', cursive;
+}
+
+.hidden__h1 {
+  display: none;
+}
+
+.titlebar__logo-hidden {
+  display: none; 
+}
+
+.titlebar__logo {
+  display: inline-block;
+  background-image: url(images/titleRock.svg);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  height: 40px;
+  width: 40px;
+}
+
+/*--------------------------------*/
+
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80%;
+  /*border: 1px black solid;*/
+  padding-left: 20px;
+  background-color: #B1C0BF;
+}
+
+/*----------------------------------*/
+.cardlist__collection {
+  background-color: #B1C0BF;
+
+}
+
+h2 {
+  display: block;
+  font-size: 40px;
+  padding: 47px 18px 35px 31px;
+  background-color: #B1C0BF;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  border: 1px black solid;
+  height: 481px;
+  width: 23.75%;
+  margin: 0 10px 17px 2px;
+  background-color: #FFFFFF;
+  opacity: .3;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.card__header {
+  margin: 0;
+  padding: 0;
+  height: 36%;
+  background-color: blue;
+}
+
+.card__header1 {
+  background-image: url('images/amazonite.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.card__header2 {
+  background-image: url('images/volcano.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card__header3 {
+  background-image: url('images/wood-rock.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__header4 {
+  background-image: url('images/ruby-zoisite.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__header5 {
+  background-image: url('images/citrine.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__header6 {
+  background-image: url('images/amethyst.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__header7 {
+  background-image: url('images/turq.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position: center;*/
+}
+
+.card__header8 {
+  background-image: url('images/amber.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.card__icon {  
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 50px;
+  background-image: url('images/diamond.svg');
+  background-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  width: 73px;
+  height: 73px;
+  margin: 16px;
+} 
+
+.card__viewbox {
+display:inline-block;
+position: absolute;
+right: 17px;
+top: 14px;
+text-align: center;
+
+}
+.card__viewbox-views {
+  margin: 5px;
+  color: #FFFFFF;
+}
+.card__viewbox-number {
+  font-size: 35px;
+  /*font-weight: bolder;*/
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.card__main {
+  padding: 16px;
+  
+}
+.card__title {
+  margin: 3px 4px 1px 4px;
+
+}
+.card__date {
+  font-size: 14px;
+  margin: 3px 4px 25px;
+}
+
+.card__link-container{
+  border: 1px black solid;
+  padding: 8px 10px;
+  margin: 6px 6px 20px;
+  height: 60px;
+  font-size: 14px;
+  background-color: #B1C0BF;
+ 
+}
+
+.card__link {
+  text-decoration: none;
+}
+.card__playlist {
+  font-size: 15px;
+  margin-left: 6px;
+  text-transform: uppercase;
+
+}
+.card__playlist-name {
+  font-size: 20px;
+  margin: 3px 6px 0;
+
+}
+.card__attachments {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 15px 8px 0;
+
+}
+.card__attachments-number {
+  font-size: 35px;
+  margin: 3px 9px;
+
+}
+
+
+@media screen and (max-width: 1250px){
+
+  header{
+    background-color: chartreuse;
+  }
+
+  .card {
+    width: 32%;
+    height: 500px;
+  }
+
+}
+
+@media screen and (max-width: 1080px){
+
+    header{
+    background-color: darkmagenta;
+    }
+
+   .card {
+    width: 47%;
+    height: 650px;
+    margin: 0 10px 18px 10px;
+  }
+
+  .card__viewbox-views {
+    font-size: 20px;
+    margin: 7px;
+    color: #FFFFFF;
+  }
+
+  .card__viewbox-number {
+    font-size: 40px;
+    /*font-weight: bolder;*/
+    margin: 0;
+    color: #FFFFFF;
+  }
+
+  .card__main {
+    padding: 16px;
+    
+  }
+  .card__title {
+    font-size: 30px;
+    margin: 3px 4px 1px 4px;
+
+  }
+  .card__date {
+    font-size: 18px;
+    margin: 3px 4px 25px;
+  }
+
+  .card__link-container{
+    padding: 21px 10px;
+    margin: 42px 6px 20px;
+    height: 79px;
+    font-size: 14px;
+  }
+
+  .card__link {
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .card__playlist {
+    font-size: 15px;
+    margin: 32px 6px 8px;   
+    text-transform: uppercase;
+  }
+
+  .card__playlist-name {
+    font-size: 20px;
+    margin: 3px 6px 0;
+
+  }
+  .card__attachments {
+    font-size: 15px;
+    margin: 25px 8px 0;
+
+  }
+  .card__attachments-number {
+    font-size: 45px;
+    margin: 3px 9px;
+
+  }
+}
+
+@media screen and (max-width: 810px){
+
+  header {
+    background-color: aqua;
+  }
+  .titlebar {
+    height: 250px;
+  }
+
+  ul {
+    display: inline-block;
+    text-align: center;
+    margin: -15px 3% 7% 12%;
+  }
+
+   .card {
+    width: 90%;
+    height: 900px;
+    margin: 0 22px 18px 22px;
+  }
+
+   .card__header {
+    height: 400px;
+   }
+
+  .hidden__h1 {
+    font-size: 60px;
+    display: block;
+    margin: 0 31%;
+    font-family: 'Shrikhand', cursive;
+
+  }
+
+  .titlebar__logo-hidden {
+    display: inline-block;  
+    background-image: url(images/titleRock.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+  } 
+
+  .og__title{
+    display: none;
+  }
+
+  .admin .fa-user-secret {
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .fa-caret-down {
+    font-size: 19px;
+  }
+
+  .admin {
+    font-size: 12px;
+  }
+}  
+
+
+@media screen and (max-width: 755px){
+  .titlebar__li-icon{
+    font-size: 17px;
+  }
+
+  .hidden__h1 {
+    margin: 0 27% 0 32%;
+  } 
+}
+
+@media screen and (max-width: 700px){
+  .hidden__h1 {
+    margin: 0 25% 0 30%;
+  } 
+}
+
+@media screen and (max-width: 650px){
+  .titlebar__li-icon{
+    font-size: 17px;
+  }
+
+  .hidden__h1 {
+    margin: 0 25%;
+  } 
+}
+
+@media screen and (max-width: 580px){
+  .hidden__h1 {
+    margin: 0 20%;
+  } 
+
+  .hamburger {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    font-size: 40px;
+  }
+
+  .titlebar {
+    height: 155px;
+  }
+
+  .titlebar__li-icon {
+    display: none;
+  }
+
+  .titlebar__li-icon-hidden {
+    display: block;
+    height:20px;
+    width: 20px;
+    vertical-align: middle;
+    margin: 20px 30px 0 30px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px 63px 25px 33px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #B1C0BF; 
+    padding: 50px; 
+  }
+}
+ 
+@media screen and (max-width: 480px){
+  h2 {
+    text-align: center;
+  }
+
+  body {
+    min-width: 320px;
+  }
+
+  .card {
+    height: 550px;
+  }
+
+  .hamburger {
+    font-size: 30px;
+    bottom: 30px;
+    right: 10px;
+  }
+
+  .hidden__h1 {
+    position: absolute;
+    bottom: 20px;
+    font-size: 40px;
+    margin: 0 19%;
+  } 
+
+  .titlebar__logo-hidden {
+    height: 40px;
+    width: 40px;
+  }
+  .card__viewbox {
+    display:inline-block;
+    position: absolute;
+    right: 17px;
+    top: 14px;
+    text-align: center;
+
+  }
+  .card__viewbox-views {
+    margin: 5px;
+    color: #FFFFFF;
+  }
+  .card__viewbox-number {
+    font-size: 35px;
+    /*font-weight: bolder;*/
+    margin: 0;
+    color: #FFFFFF;
+  }
+
+  .card__main {
+    padding: 16px;
+    
+  }
+  .card__title {
+    margin: 3px 4px 1px 4px;
+
+  }
+  .card__date {
+    font-size: 14px;
+    margin: 3px 4px 25px;
+  }
+
+  .card__link-container{
+    border: 1px black solid;
+    padding: 8px 10px;
+    margin: 6px 6px 20px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .card__link {
+    text-decoration: none;
+  }
+  .card__playlist {
+    font-size: 15px;
+    margin-left: 6px;
+    text-transform: uppercase;
+
+  }
+  .card__playlist-name {
+    font-size: 20px;
+    margin: 3px 6px 0;
+
+  }
+  .card__attachments {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 15px 8px 0;
+
+  }
+  .card__attachments-number {
+    font-size: 35px;
+    margin: 3px 9px;
+  }
+
+  .card__header {
+    height: 200px;
+   }
+}
+
+
+
